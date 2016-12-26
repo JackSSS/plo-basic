@@ -1,0 +1,346 @@
+/*
+* Globals
+*/
+.loading {
+	margin-top: 400px;
+}
+li {
+	list-style-type: none;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.5;
+}
+.nav-links {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+	color: #333;
+	text-shadow: none; /* Prevent inheritance from `body` */
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+
+/*
+* Base structure
+*/
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #fff8ef;
+	color: #000;
+	text-align: center;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+#portfolio, #skills, #contact {
+	display: none;
+}
+
+.site-wrapper {
+	display: table;
+	width: 100%;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+}
+.site-wrapper-inner {
+	display: table-cell;
+	vertical-align: top;
+}
+.cover-container {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+	max-width: 1200px;
+	padding: 30px;
+	position: fixed;
+	width: 100%;
+	animation-duration: .7s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+margin-left: 100%;
+width: 100%;
+}
+
+to {
+margin-left: 0%;
+width: 100%;
+}
+}
+
+.portfolio,
+.skills {
+
+	padding: 15px;
+	font-size: 20px;
+	background-color: rgba(0,0,0,0.1);
+	border-top: 1px solid #000;
+}
+
+.portfolio a {
+	color: #000;
+}
+
+.portfolio li {
+  width: 20%;
+  display: inline-block;
+}
+
+
+.logo {
+	float: left;
+}
+
+.logo:hover {
+	z-index: 0;
+}
+
+.logo2 {
+	z-index: 0;
+	height: 60px;
+	float: left;
+}
+
+.logo2:hover {
+	z-index: 10;
+}
+
+
+
+/*
+* Header
+*/
+.masthead-brand {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+	display: inline-block;
+}
+.masthead-nav > li + li {
+	margin-left: 20px;
+}
+.masthead-nav > li > a {
+	padding-right: 0;
+	padding-left: 0;
+	font-size: 24px;
+	color: #fff; /* IE8 proofing */
+	color: #000;
+	border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+	background-color: transparent;
+	opacity: 0.6;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+	color: #fff;
+	border-bottom-color: #fff;
+}
+.nav-seperator {
+	color: #00A300;
+}
+
+/*
+* Portfolio
+*/
+.welcome {
+  margin-right: 0px;
+  animation-duration: 2s;
+  animation-name: appear;
+}
+.welcome h1 {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 40px;
+	margin-top: 200px;
+	font-size: 100px;
+	text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+}
+.welcome h1 span {
+	animation: upper 11s linear infinite;
+}
+
+@keyframes appear {
+  from {
+  opacity: 0.1;
+  }
+
+  to {
+  opacity: 1;
+  }
+}
+.error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
+.code:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+.error {
+	color: #fff;
+	margin-right: 50px;
+	margin-bottom: 40px;
+	margin-top: 200px;
+	font-size: 100px;
+	text-align: right;
+	text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+}
+.error span {
+	animation: upper 11s linear infinite;
+}
+.code span:nth-of-type(2) {
+	animation: lower 10s linear infinite;
+}
+.code span:nth-of-type(1) {
+	text-shadow: none;
+	opacity:.4;
+}
+@keyframes upper {
+	0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+		opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+	}
+	20%,21.999%,63%,63.999%,65%,69.999% {
+		opacity:0.4; text-shadow: none;
+	}
+}
+@keyframes lower {
+	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+		opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+	}
+	19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+		opacity:0.4; text-shadow: none;
+	}
+}
+
+@media (min-width: 320px) {
+	.error {
+		font-size: 58px;
+	}
+	.cover-container {
+		margin-bottom: 209px;
+	}
+	.portfolio {
+		font-size: 18px;
+	}
+
+	.logo {
+		height: 118px;
+	}
+	.inner {
+		padding: 10px;
+	}
+
+}
+@media (min-width: 360px) {
+	.error {
+		font-size: 82px;
+	}
+}
+@media (min-width: 768px) {
+	.masthead-brand {
+		float: left;
+	}
+	.masthead-nav {
+		float: right;
+	}
+}
+
+
+/*
+* Cover
+*/
+
+.cover {
+	padding: 0 20px;
+}
+.cover .btn-lg {
+	padding: 10px 20px;
+	font-weight: bold;
+}
+
+
+/*
+* Footer
+*/
+
+.mastfoot {
+	color: #999; /* IE8 proofing */
+	color: rgba(255,255,255,.5);
+}
+
+
+/*
+* Affix and center
+*/
+
+@media (min-width: 768px) {
+	/* Pull out the header and footer */
+	.masthead {
+		position: absolute;
+		top: 0;
+	}
+	.mastfoot {
+		position: fixed;
+		bottom: 0;
+	}
+	/* Handle the widths */
+	.masthead,
+	.mastfoot,
+	.cover-container {
+		width: 100%; /* Must be percentage or pixels for horizontal alignment */
+	}
+}
+
+@media (min-width: 992px) {
+	.masthead,
+	.cover-container {
+		width: 1200px;
+		margin-bottom: 73px;
+	}
+	.mastfoot {
+		color: #000;
+		width: 1200px;
+
+	}
+	.logo {
+		height: 60px;
+	}
+
+	.portfolio, .skills {
+		animation-duration: 2s;
+		animation-name: slidein;
+	}
+
+	@keyframes slidein {
+		from {
+			margin-left: 100%;
+			width: 100%;
+		}
+
+		to {
+			margin-left: 0%;
+			width: 100%;
+		}
+	}
+}
