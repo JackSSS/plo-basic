@@ -99,7 +99,7 @@ width: 100%;
 
 	padding: 15px;
 	font-size: 20px;
-	background-color: rgba(0,0,0,0.1);
+	background-color: rgba(0,0,0,0.05);
 	border-top: 1px solid #000;
 }
 .portfolio ul {
@@ -236,6 +236,8 @@ width: 100%;
 	}
 	.inner {
 		padding: 0px;
+		background-color: #fff;
+		z-index: 20;
 	}
 	.error {
 	color: #fff;
@@ -280,6 +282,9 @@ width: 100%;
 	.mastfoot,
 	.cover-container {
 		width: 100%; /* Must be percentage or pixels for horizontal alignment */
+	}
+	.mastfoot p {
+		display: none;
 	}
 	.mastfoot-nav {
 		padding: 0;
