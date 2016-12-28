@@ -219,6 +219,9 @@ width: 100%;
 	.portfolio {
 		font-size: 18px;
 	}
+	.portfolio img {
+		width: 70%;
+	}
 	.contact-links {
 		padding: 0;
 	}
