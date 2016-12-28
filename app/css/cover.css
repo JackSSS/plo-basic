@@ -43,7 +43,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-color: #fff8ef;
+	background-color: #fff;
 	color: #000;
 	text-align: center;
 }
@@ -62,6 +62,9 @@ body {
 .site-wrapper-inner {
 	display: table-cell;
 	vertical-align: top;
+	height: 100%; /* For at least Firefox */
+	min-height: 100%;
+	z-index: 0;
 }
 .cover-container {
 	margin-right: auto;
@@ -112,18 +115,9 @@ width: 100%;
   display: inline-block;
 }
 
-.logo:hover {
-	z-index: 0;
-}
-
 .logo2 {
-	z-index: 0;
 	height: 60px;
 	float: left;
-}
-
-.logo2:hover {
-	z-index: 10;
 }
 
 
@@ -195,15 +189,7 @@ width: 100%;
   }
 }
 /*.error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }*/
-.error {
-	color: #fff;
-	margin-right: 50px;
-	margin-bottom: 40px;
-	margin-top: 200px;
-	font-size: 100px;
-	text-align: right;
-	text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
-}
+
 .error span {
 	animation: upper 11s linear infinite;
 }
@@ -224,8 +210,8 @@ width: 100%;
 }
 @media (min-width: 320px) {
 	.error {
-		font-size: 58px;
-		margin-top: 114px;e
+
+		text-align: center;
 	}
 	.cover-container {
 		margin-bottom: 90px;
@@ -248,18 +234,50 @@ width: 100%;
 		background-color: rgba(0,0,0,0.1);
 
 	}
+	.error {
+	color: #fff;
+	font-size: 58px;
+	margin-top: 180px;
+	margin-bottom: 40px;
+	margin-top: 200px;
+	text-align: center;
+	text-shadow: 0 0 80px #ffffff, 0 0 6px #0000ff;
+}
 	.masthead-nav {
 		display: none;
 	}
 	.welcome h1 {
 		font-size: 70px;
 	}
-	.mastfoot {
-		position: fixed;
+	/*
+* Footer
+*/
+
+.mastfoot {
+	color: #999; /* IE8 proofing */
+	color: rgba(255,255,255,.5);
+}
+
+
+/*
+* Affix and center
+*/
+
+	/* Pull out the header and footer */
+	.masthead {
+		position: absolute;
+		top: 0;
 	}
-/*	.mastfoot p {
-		display: none;
-	}*/
+	.mastfoot {
+		position: absolute;
+		bottom: 0;
+	}
+	/* Handle the widths */
+	.masthead,
+	.mastfoot,
+	.cover-container {
+		width: 100%; /* Must be percentage or pixels for horizontal alignment */
+	}
 	.mastfoot-nav {
 		padding: 0;
 		margin-top: 20px;
@@ -311,35 +329,7 @@ width: 100%;
 }
 
 
-/*
-* Footer
-*/
 
-.mastfoot {
-	color: #999; /* IE8 proofing */
-	color: rgba(255,255,255,.5);
-}
-
-
-/*
-* Affix and center
-*/
-
-	/* Pull out the header and footer */
-	.masthead {
-		position: absolute;
-		top: 0;
-	}
-	.mastfoot {
-		position: fixed;
-		bottom: 0;
-	}
-	/* Handle the widths */
-	.masthead,
-	.mastfoot,
-	.cover-container {
-		width: 100%; /* Must be percentage or pixels for horizontal alignment */
-	}
 }
 
 @media (min-width: 992px) {
@@ -351,6 +341,10 @@ width: 100%;
 	.inner {
 		padding: 10px;
 		background-color: rgba(0,0,0,0);
+	}
+	.error {
+		margin-right: 50px;
+		text-align: right;
 	}
 	.mastfoot {
 		color: #000;
