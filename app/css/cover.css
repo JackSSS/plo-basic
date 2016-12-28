@@ -91,6 +91,7 @@ width: 100%;
 }
 
 .portfolio,
+.contact,
 .skills {
 
 	padding: 15px;
@@ -98,12 +99,15 @@ width: 100%;
 	background-color: rgba(0,0,0,0.1);
 	border-top: 1px solid #000;
 }
+.portfolio ul {
+	padding: 0;
+}
 
-.portfolio a {
+.main-content a {
 	color: #000;
 }
 
-.portfolio li {
+.contact li {
   width: 20%;
   display: inline-block;
 }
@@ -190,8 +194,7 @@ width: 100%;
   opacity: 1;
   }
 }
-.error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
-.code:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+/*.error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }*/
 .error {
 	color: #fff;
 	margin-right: 50px;
@@ -219,15 +222,6 @@ width: 100%;
 		opacity:0.4; text-shadow: none;
 	}
 }
-@keyframes lower {
-	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
-		opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
-	}
-	19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
-		opacity:0.4; text-shadow: none;
-	}
-}
-
 @media (min-width: 320px) {
 	.error {
 		font-size: 58px;
@@ -371,7 +365,7 @@ width: 100%;
 		display: none;
 	}
 
-	.portfolio, .skills {
+	.main-content {
 		animation-duration: 2s;
 		animation-name: slidein;
 	}
@@ -380,6 +374,10 @@ width: 100%;
 	}
 	.welcome h1 {
 		font-size: 100px;
+	}
+	.portfolio li {
+		display: inline-block;
+		width: 20%;
 	}
 
 	@keyframes slidein {
