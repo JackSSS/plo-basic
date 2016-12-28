@@ -379,6 +379,9 @@ width: 100%;
 		display: inline-block;
 		width: 32%;
 	}
+	.portfolio img {
+		width: 100%;
+	}
 
 	@keyframes slidein {
 		from {
