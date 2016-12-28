@@ -220,7 +220,7 @@ width: 100%;
 		font-size: 18px;
 	}
 	.portfolio img {
-		width: 70%;
+		width: 85%;
 	}
 	.contact-links {
 		padding: 0;
@@ -375,9 +375,6 @@ width: 100%;
 	.portfolio li {
 		display: inline-block;
 		width: 32%;
-	}
-	.portfolio img {
-		width: 85%;
 	}
 
 	@keyframes slidein {
