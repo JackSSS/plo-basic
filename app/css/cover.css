@@ -108,11 +108,6 @@ width: 100%;
   display: inline-block;
 }
 
-
-.logo {
-	float: left;
-}
-
 .logo:hover {
 	z-index: 0;
 }
@@ -236,19 +231,59 @@ width: 100%;
 @media (min-width: 320px) {
 	.error {
 		font-size: 58px;
+		margin-top: 114px;e
 	}
 	.cover-container {
-		margin-bottom: 209px;
+		margin-bottom: 90px;
 	}
 	.portfolio {
 		font-size: 18px;
 	}
+	.contact-links {
+		padding: 0;
+	}
+	.contact-links > li + li {
+		margin-left: 30px;
+	}
 
 	.logo {
-		height: 118px;
+		height: 65px;
 	}
 	.inner {
-		padding: 10px;
+		padding: 0px;
+		background-color: rgba(0,0,0,0.1);
+
+	}
+	.masthead-nav {
+		display: none;
+	}
+	.welcome h1 {
+		font-size: 70px;
+	}
+	.mastfoot {
+		position: fixed;
+	}
+/*	.mastfoot p {
+		display: none;
+	}*/
+	.mastfoot-nav {
+		padding: 0;
+		margin-top: 20px;
+
+	}
+	.mastfoot-nav li {
+	display: inline-block;
+	}
+	.mastfoot-nav > li + li {
+		margin-left: 30px;
+	}
+	.mastfoot-nav > li > a {
+		padding-right: 0;
+		padding-left: 0;
+		font-size: 24px;
+		color: #fff; /* IE8 proofing */
+		color: #000;
+		border-bottom: 2px solid transparent;
 	}
 
 }
@@ -256,15 +291,17 @@ width: 100%;
 	.error {
 		font-size: 82px;
 	}
+	.mastfoot-nav > li + li {
+	margin-left: 40px;
+	}
+	.mastfoot-nav {
+	padding: 0;
+	}
 }
 @media (min-width: 768px) {
 	.masthead-brand {
 		float: left;
 	}
-	.masthead-nav {
-		float: right;
-	}
-}
 
 
 /*
@@ -294,7 +331,6 @@ width: 100%;
 * Affix and center
 */
 
-@media (min-width: 768px) {
 	/* Pull out the header and footer */
 	.masthead {
 		position: absolute;
@@ -318,18 +354,32 @@ width: 100%;
 		width: 1200px;
 		margin-bottom: 73px;
 	}
+	.inner {
+		padding: 10px;
+		background-color: rgba(0,0,0,0);
+	}
 	.mastfoot {
 		color: #000;
 		width: 1200px;
-
 	}
-	.logo {
-		height: 60px;
+	.masthead-nav {
+		display: block;
+		text-align: left;
+    	margin-left: 450px;
+	}
+	.mastfoot-nav {
+		display: none;
 	}
 
 	.portfolio, .skills {
 		animation-duration: 2s;
 		animation-name: slidein;
+	}
+	.logo {
+		float: left;
+	}
+	.welcome h1 {
+		font-size: 100px;
 	}
 
 	@keyframes slidein {
@@ -342,5 +392,11 @@ width: 100%;
 			margin-left: 0%;
 			width: 100%;
 		}
+	}
+}
+
+@media (min-width: 1025px) {
+		.masthead-nav {
+    	margin-left: 760px;
 	}
 }
