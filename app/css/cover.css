@@ -396,7 +396,7 @@ width: 100%;
 }
 
 @media (min-width: 1025px) {
-		.masthead-nav {
+	.masthead-nav {
     	margin-left: 760px;
 	}
 }
