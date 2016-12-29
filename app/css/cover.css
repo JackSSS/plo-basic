@@ -366,6 +366,9 @@ width: 100%;
 	.mastfoot-nav {
 		display: none;
 	}
+		.mastfoot p {
+		display: block;
+	}
 
 	.main-content {
 		animation-duration: 2s;
