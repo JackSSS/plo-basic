@@ -183,7 +183,6 @@ width: 100%;
 .welcome p {
 	animation-duration: 4s;
 	animation-name: appear;
-	font-size: 25px;
 }
 
 @keyframes appear {
@@ -262,6 +261,9 @@ width: 100%;
 	}
 	.welcome h1 {
 		font-size: 70px;
+	}
+	.welcome p {
+		font-size: 19px;
 	}
 	/*
 * Footer
@@ -358,6 +360,9 @@ width: 100%;
 	.inner {
 		padding: 10px;
 		background-color: rgba(0,0,0,0);
+	}
+	.welcome p{
+		font-size: 25px;
 	}
 	.error {
 		margin-right: 50px;
