@@ -180,6 +180,11 @@ width: 100%;
 .welcome h1 span {
 	animation: upper 11s linear infinite;
 }
+.welcome p {
+	animation-duration: 4s;
+	animation-name: appear;
+	font-size: 25px;
+}
 
 @keyframes appear {
   from {
