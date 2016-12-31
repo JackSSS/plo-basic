@@ -43,6 +43,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	overflow-y: auto;
 	background: url(../img/sfluv.jpg) no-repeat;
 	background-size: cover;
 	color: #000;
@@ -189,8 +190,10 @@ width: 100%;
   opacity: 1;
   }
 }
-/*.error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }*/
 
+.main-content p {
+	font-size: 20px;
+}
 .error span {
 	animation: upper 11s linear infinite;
 }
