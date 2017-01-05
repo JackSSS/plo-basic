@@ -292,7 +292,7 @@ body {
 	display: inline-block;
 	}
 	.mastfoot-nav > li + li {
-		margin-left: 55px;
+		margin-left: 50px;
 	}
 	.mastfoot-nav > li > a {
 		padding-right: 0;
@@ -304,7 +304,7 @@ body {
 	}
 	.mastfoot-nav span {
 		display: block;
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 }
