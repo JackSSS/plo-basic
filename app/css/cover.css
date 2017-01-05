@@ -292,7 +292,7 @@ body {
 	display: inline-block;
 	}
 	.mastfoot-nav > li + li {
-		margin-left: 30px;
+		margin-left: 55px;
 	}
 	.mastfoot-nav > li > a {
 		padding-right: 0;
@@ -302,15 +302,17 @@ body {
 		color: #000;
 		border-bottom: 2px solid transparent;
 	}
+	.mastfoot-nav span {
+		display: block;
+		font-size: 10px;
+	}
 
 }
 @media (min-width: 360px) {
 	.error {
 		font-size: 82px;
 	}
-	.mastfoot-nav > li + li {
-	margin-left: 40px;
-	}
+
 	.mastfoot-nav {
 	padding: 0;
 	}
