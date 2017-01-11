@@ -272,10 +272,7 @@ body {
 		position: absolute;
 		top: 0;
 	}
-	.mastfoot {
-		position: absolute;
-		bottom: 0;
-	}
+
 	/* Handle the widths */
 	.masthead,
 	.mastfoot,
@@ -323,7 +320,19 @@ body {
 	.masthead-brand {
 		float: left;
 	}
-
+	.mastfoot {
+	position: absolute;
+	bottom: 0;
+	background-color: #000;
+	height: 70px;
+	color: #fff;
+	padding: 15px;
+	}
+	.mastfoot p {
+		display: block;
+		margin-bottom: 0;
+		margin-top: 8px;
+	}
 
 /*
 * Cover
@@ -358,10 +367,7 @@ body {
 		margin-right: 50px;
 		text-align: right;
 	}
-	.mastfoot {
-		color: #000;
-		width: 1200px;
-	}
+
 	.masthead-nav {
 		display: block;
 		text-align: left;
@@ -369,9 +375,6 @@ body {
 	}
 	.mastfoot-nav {
 		display: none;
-	}
-		.mastfoot p {
-		display: block;
 	}
 
 	.main-content {
