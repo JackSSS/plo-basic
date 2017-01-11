@@ -316,12 +316,17 @@ body {
 	padding: 0;
 	}
 }
+@media (max-height: 612px) {
+	.mastfoot {
+		position: relative;
+	}
+}
 @media (min-width: 768px) {
 	.masthead-brand {
 		float: left;
 	}
 	.mastfoot {
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	background-color: #000;
 	height: 70px;
