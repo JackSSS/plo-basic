@@ -238,9 +238,8 @@ body {
 	.error {
 	color: #fff;
 	font-size: 58px;
-	margin-top: 180px;
 	margin-bottom: 40px;
-	margin-top: 200px;
+	margin-top: 140px;
 	text-align: center;
 	text-shadow: 0 0 80px #ffffff, 0 0 6px #0000ff;
 }
@@ -326,13 +325,12 @@ body {
 		float: left;
 	}
 	.mastfoot {
-	position: relative;
+	position: absolute;
 	bottom: 0;
 	background-color: #000;
 	height: 70px;
 	color: #fff;
 	padding: 15px;
-	display
 	}
 	.mastfoot p {
 		display: block;
