@@ -321,7 +321,7 @@ body {
 		float: left;
 	}
 	.mastfoot {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	background-color: #000;
 	height: 70px;
