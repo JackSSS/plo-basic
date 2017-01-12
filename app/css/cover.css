@@ -335,9 +335,22 @@ body {
 	.mastfoot p {
 		display: block;
 		margin-bottom: 0;
-		margin-top: 8px;
+		margin-top: 10px;
+		margin-left: 100px;
+		float: left;
 	}
-
+    .footer-links {
+    	float: right;
+    	margin-right: 40px;
+    	width: 33%;
+    }
+    .footer-links li {
+    	display: inline-block;
+    	width: 25%;
+    }
+    .footer-links i {
+    	color: #fff;
+    }
 /*
 * Cover
 */
