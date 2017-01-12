@@ -278,9 +278,10 @@ body {
 	.cover-container {
 		width: 100%; /* Must be percentage or pixels for horizontal alignment */
 	}
-	.mastfoot p {
+	.footer-links, .mastfoot p {
 		display: none;
 	}
+
 	.mastfoot-nav {
 		padding: 0;
 		margin-top: 20px;
