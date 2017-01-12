@@ -341,6 +341,7 @@ body {
 		float: left;
 	}
     .footer-links {
+    	display: block;
     	float: right;
     	margin-right: 40px;
     	width: 33%;
