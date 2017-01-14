@@ -239,7 +239,7 @@ body {
 	color: #fff;
 	font-size: 58px;
 	margin-bottom: 40px;
-	margin-top: 140px;
+	margin-top: 155px;
 	text-align: center;
 	text-shadow: 0 0 80px #ffffff, 0 0 6px #0000ff;
 }
@@ -383,6 +383,7 @@ body {
 		font-size: 25px;
 	}
 	.error {
+		margin-top: 140px;
 		margin-right: 50px;
 		text-align: right;
 	}
