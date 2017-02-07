@@ -325,7 +325,7 @@ body {
 }*/
 @media (min-width: 768px) {
 	body {
-		background-color: #e1c75a;
+		background-color: #fff;
 	}
 	.masthead-brand {
 		float: left;
