@@ -203,6 +203,23 @@ body {
 		opacity:0.4; text-shadow: none;
 	}
 }
+
+.main-content {
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 100%;
+		width: 100%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
 @media (min-width: 320px) {
 	body {
 		background-color: #deeef9;
@@ -254,7 +271,7 @@ body {
 	.welcome p {
 		font-size: 19px;
 	}
-	/*
+/*
 * Footer
 */
 
@@ -325,7 +342,7 @@ body {
 }*/
 @media (min-width: 768px) {
 	body {
-		background-color: #e1c75a;
+		background-color: #fff;
 	}
 	.masthead-brand {
 		float: left;
@@ -402,10 +419,6 @@ body {
 		display: none;
 	}
 
-	.main-content {
-		animation-duration: 2s;
-		animation-name: slidein;
-	}
 	.logo {
 		float: left;
 	}
@@ -415,18 +428,6 @@ body {
 	.portfolio li {
 		display: inline-block;
 		width: 32%;
-	}
-
-	@keyframes slidein {
-		from {
-			margin-left: 100%;
-			width: 100%;
-		}
-
-		to {
-			margin-left: 0%;
-			width: 100%;
-		}
 	}
 }
 
