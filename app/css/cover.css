@@ -255,13 +255,13 @@ body {
 		z-index: 20;
 	}
 	.error {
-	color: #fff;
-	font-size: 58px;
-	margin-bottom: 40px;
-	margin-top: 155px;
-	text-align: center;
-	text-shadow: 0 0 80px #ffffff, 0 0 6px #0000ff;
-}
+		color: #fff;
+		font-size: 58px;
+		margin-bottom: 40px;
+		margin-top: 155px;
+		text-align: center;
+		text-shadow: 0 0 80px #ffffff, 0 0 6px #0000ff;
+	}
 	.masthead-nav {
 		display: none;
 	}
