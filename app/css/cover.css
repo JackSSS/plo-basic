@@ -74,9 +74,6 @@ body {
 	margin-left: auto;
 }
 
-.content-container {
-	position: absolute;
-}
 
 /* Padding for spacing */
 .inner {
@@ -95,10 +92,13 @@ body {
 	background-color: rgba(0,0,0,0.05);
 	border-top: 1px solid #000;
 }
+
 .portfolio ul {
 	padding: 0;
 }
-
+.content-container {
+	position: relative;
+}
 .main-content a {
 	color: #000;
 }
@@ -281,6 +281,8 @@ body {
 
 .mastfoot {
 	position: absolute;
+	width: 100%;
+	bottom: 0;
 	color: #999; /* IE8 proofing */
 	color: rgba(255,255,255,.5);
 }
@@ -340,11 +342,7 @@ body {
 	padding: 0;
 	}
 }
-/*@media (max-height: 612px) {
-	.mastfoot {
-		position: relative;
-	}
-}*/
+
 @media (min-width: 768px) {
 	body {
 		background-color: #fff;
@@ -353,7 +351,6 @@ body {
 		float: left;
 	}
 	.mastfoot {
-	bottom: 0;
 	background-color: rgba(0,0,0,0.6);
 	height: 70px;
 	color: #fff;
