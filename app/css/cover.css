@@ -74,6 +74,10 @@ body {
 	margin-left: auto;
 }
 
+.content-container {
+	position: absolute;
+}
+
 /* Padding for spacing */
 .inner {
 	max-width: 1200px;
