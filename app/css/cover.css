@@ -98,6 +98,7 @@ body {
 }
 .content-container {
 	position: relative;
+	margin-bottom: 70px;
 }
 .main-content a {
 	color: #000;
